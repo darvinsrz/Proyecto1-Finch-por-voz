@@ -25,3 +25,5 @@ while True: #prueba para revisar si los comandos de voz funcionan
         print("Dijiste: ", recognized_text)
     else:
         print("Comando no reconocido")
+
+#podemos pasar a transformarlo en movimeintos reales del robot
