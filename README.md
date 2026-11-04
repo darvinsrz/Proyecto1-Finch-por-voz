@@ -1,7 +1,26 @@
-Python Library for Hummingbird Bit and Finch 2
+Finch Voice Assistant
+Proyecto desarrollado en Python para controlar un robot Finch 2.0 mediante comandos de voz en español.
 
-Written : RaghunathReddy and Bambi Brewer
+Funcionalidades actuales
+Reconocimiento de voz mediante SpeechRecognition.
+Movimiento del robot mediante comandos hablados.
 
-Our Python library allows students to use Python to read sensors and set motors and LEDs with the Hummingbird Bit. To use Python with the Hummingbird Bit, you must connect to the Hummingbird Bit via bluetooth with the BlueBird Connector. 
+Control de dirección:
+-Adelante -Atrás -Izquierda
+-Derecha -Detente -Indicadores LED para cada movimiento.
+-Manejo de errores cuando el audio no es reconocido.
 
-For more information, see www.birdbraintechnologies.com/hummingbirdbit/python/
+Tecnologías utilizadas
+-Python
+-SpeechRecognition
+-Finch 2.0
+-BirdBrain API
+
+Evidencias
+Las pruebas de funcionamiento, videos y avances del proyecto se encuentran en la siguiente carpeta de Google Drive:
+
+
+Estado del proyecto
+🚧 En desarrollo.
+
+- Por Darvin Daniel Suárez Lara
