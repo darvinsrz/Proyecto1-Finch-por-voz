@@ -6,6 +6,8 @@ r = sr.Recognizer()
 
 bird = Finch()
 
+r.pause_threshold = 0.5 #tiempo que tarda en decidir si ya temrine de hablar
+
 while True: 
     
     try: 
@@ -39,6 +41,7 @@ while True:
         bird.setBeak(0, 0, 0)
         bird.setTail("all", 0, 0, 0)
         bird.stopAll() #detiene todo
+        break
     else:
         print("Comando no reconocido")
 
