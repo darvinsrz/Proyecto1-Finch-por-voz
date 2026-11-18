@@ -13,7 +13,7 @@ while True:
     try: 
         with sr.Microphone() as source: 
             audio = r.listen(source) 
-        recognized_text = r.recognize_google(audio, language="es-MX") #type: ignore
+        recognized_text = r.recognize_vosk(audio) #type: ignore #modelo local vosk en español; mayor rapidez
         recognized_text = recognized_text.lower() #evitar conflictos con mayusculas y minusculas
     except sr.UnknownValueError: 
         print("No logré reconocer el mensaje de voz")
@@ -41,7 +41,8 @@ while True:
         bird.setBeak(0, 0, 0)
         bird.setTail("all", 0, 0, 0)
         bird.stopAll() #detiene todo
+    elif recognized_text == "alto":
         break
     else:
-        print("Comando no reconocido")
+        print("Intenta de nuevo")
 
