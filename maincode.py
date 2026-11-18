@@ -6,10 +6,7 @@ r = sr.Recognizer()
 
 bird = Finch()
 
-try:
-    r.pause_threshold = 0.4 #tiempo que tarda en decidir si ya temrine de hablar
-except AssertionError:
-    print("Habla más rápido")
+r.pause_threshold = 0.5 #tiempo que tarda en decidir si ya temrine de hablar
 
 while True: 
     
